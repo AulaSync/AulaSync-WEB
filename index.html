@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AulaSync - Armado de PCs y revisiones tecnológicas para instituciones educativas. Optimizamos el tiempo docente para clases sin interrupciones.">
+  <title>AulaSync | Soluciones Tecnológicas para Aulas Modernas</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Decorative Glows -->
+  <div class="glow-bg"></div>
+  <div class="glow-bg-right"></div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="logo-container">
+      <!-- Scalable Vector SVG Logo of AulaSync -->
+      <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="url(#logo-grad)" stroke-width="3" stroke-dasharray="240 30" stroke-linecap="round" transform="rotate(-95 50 50)" />
+        
+        <!-- Cable plug logic -->
+        <path d="M 91 61 L 96 61 M 91 67 L 96 67" stroke="#33D1FF" stroke-width="2" stroke-linecap="round" />
+        <rect x="85" y="58" width="6" height="12" rx="1.5" fill="#33D1FF" />
+        <path d="M 85 64 C 77 76, 55 88, 30 80" fill="none" stroke="#0A84FF" stroke-width="2" stroke-linecap="round" />
+        
+        <!-- School monitor -->
+        <rect x="35" y="32" width="30" height="20" rx="3" fill="#0D1B2A" stroke="#0A84FF" stroke-width="2" />
+        <path d="M 46 52 L 44 58 L 56 58 L 54 52 Z" fill="#0A84FF" />
+        
+        <!-- Graduation cap inside monitor -->
+        <polygon points="50,36 60,40 50,44 40,40" fill="#33D1FF" />
+        <polygon points="45,42 50,44 55,42 55,45 50,47 45,45" fill="#0A84FF" />
+        <line x1="55" y1="41" x2="57" y2="45" stroke="#33D1FF" stroke-width="0.8" />
+        <circle cx="57" cy="45" r="1" fill="#33D1FF" />
+
+        <!-- PC tower next to monitor -->
+        <rect x="68" y="26" width="12" height="32" rx="2" fill="#0D1B2A" stroke="#0A84FF" stroke-width="2" />
+        <circle cx="74" cy="32" r="2" fill="#33D1FF" />
+        <line x1="72" y1="38" x2="76" y2="38" stroke="#33D1FF" stroke-width="1.5" stroke-linecap="round" />
+        <line x1="72" y1="42" x2="76" y2="42" stroke="#33D1FF" stroke-width="1.5" stroke-linecap="round" />
+
+        <!-- Classroom icon on left -->
+        <g transform="translate(18, 42) scale(0.6)">
+          <!-- Board -->
+          <rect x="0" y="0" width="18" height="13" rx="1.5" fill="none" stroke="#E6E8EB" stroke-width="2" />
+          <line x1="5" y1="13" x2="2" y2="18" stroke="#E6E8EB" stroke-width="2" />
+          <line x1="13" y1="13" x2="16" y2="18" stroke="#E6E8EB" stroke-width="2" />
+          <!-- Teacher -->
+          <circle cx="-5" cy="5" r="3.5" fill="#E6E8EB" />
+          <path d="M -9 15 C -9 11, -1 11, -1 15" fill="none" stroke="#E6E8EB" stroke-width="2" stroke-linecap="round" />
+          <line x1="-3" y1="10" x2="3" y2="4" stroke="#E6E8EB" stroke-width="2" stroke-linecap="round" />
+          <!-- Students -->
+          <circle cx="9" cy="18" r="2.5" fill="#E6E8EB" />
+          <circle cx="16" cy="18" r="2.5" fill="#E6E8EB" />
+        </g>
+        
+        <!-- Checkmark badge at the top -->
+        <circle cx="50" cy="17" r="7" fill="#0D1B2A" stroke="#33D1FF" stroke-width="2" />
+        <path d="M 47 17 L 49 19 L 53 15" fill="none" stroke="#33D1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <line x1="50" y1="6" x2="50" y2="2" stroke="#33D1FF" stroke-width="1.5" stroke-linecap="round" />
+        <line x1="42" y1="9" x2="39" y2="7" stroke="#33D1FF" stroke-width="1.5" stroke-linecap="round" />
+        <line x1="58" y1="9" x2="61" y2="7" stroke="#33D1FF" stroke-width="1.5" stroke-linecap="round" />
+
+        <!-- Gradients -->
+        <defs>
+          <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0A84FF" />
+            <stop offset="100%" stop-color="#33D1FF" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <a href="#inicio" class="logo-text">
+        <span class="aula">Aula</span><span class="sync">Sync</span>
+      </a>
+    </div>
+
+    <!-- Toggle button for mobile -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Desktop & Mobile navigation -->
+    <nav class="nav">
+      <a href="#inicio" class="nav-link active">Inicio</a>
+      <a href="#galeria" class="nav-link">Galería</a>
+      <a href="#contenido" class="nav-link">Contenido</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- INICIO (Hero Section) -->
+  <section id="inicio">
+    <div class="hero-content" data-aos="fade-right">
+      <div class="hero-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        Optimización Tecnológica Escolar
+      </div>
+      <h1 class="hero-title">
+        Un aula lista,<br><span>una clase sin interrupciones.</span>
+      </h1>
+      <p class="hero-desc">
+        AulaSync es la solución definitiva que instala, configura y mantiene equipos de cómputo en instituciones educativas. Ahorramos tiempo a los profesores para que su única preocupación sea enseñar.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn btn-primary">Solicitar Diagnóstico</a>
+        <a href="#contenido" class="btn btn-secondary">Conocer Más</a>
+      </div>
+    </div>
+    <div class="hero-visual" data-aos="fade-left">
+      <!-- Beautiful interactive graphic reflecting logo -->
+      <svg class="hero-logo-large" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer Glowing Ring -->
+        <circle cx="50" cy="50" r="44" fill="none" stroke="url(#hero-grad)" stroke-width="2.5" stroke-dasharray="230 35" stroke-linecap="round" transform="rotate(-90 50 50)" filter="drop-shadow(0 0 8px rgba(51, 209, 255, 0.4))" />
+        
+        <!-- Power Connector Cable -->
+        <path d="M 91 62 L 96 62 M 91 68 L 96 68" stroke="#33D1FF" stroke-width="2.5" stroke-linecap="round" />
+        <rect x="84" y="58" width="7" height="14" rx="2" fill="#33D1FF" />
+        <path d="M 84 65 C 75 78, 55 90, 30 82" fill="none" stroke="#0A84FF" stroke-width="2.5" stroke-linecap="round" />
+        
+        <!-- Central Computer Setup -->
+        <rect x="33" y="30" width="34" height="22" rx="3.5" fill="#0D1B2A" stroke="#0A84FF" stroke-width="2" />
+        <path d="M 45 52 L 42 60 L 58 60 L 55 52 Z" fill="#0A84FF" />
+        
+        <!-- Graduation Cap -->
+        <polygon points="50,34 62,39 50,44 38,39" fill="#33D1FF" />
+        <polygon points="44,41 50,44 56,41 56,44 50,47 44,44" fill="#0A84FF" />
+        <line x1="56" y1="40" x2="58" y2="45" stroke="#33D1FF" stroke-width="1" />
+        <circle cx="58" cy="45" r="1.2" fill="#33D1FF" />
+
+        <!-- PC Tower -->
+        <rect x="70" y="24" width="13" height="36" rx="2.5" fill="#0D1B2A" stroke="#0A84FF" stroke-width="2" />
+        <circle cx="76.5" cy="30" r="2.5" fill="#33D1FF" />
+        <line x1="74" y1="37" x2="79" y2="37" stroke="#33D1FF" stroke-width="1.8" stroke-linecap="round" />
+        <line x1="74" y1="42" x2="79" y2="42" stroke="#33D1FF" stroke-width="1.8" stroke-linecap="round" />
+
+        <!-- Classroom Presentation Icon -->
+        <g transform="translate(14, 40) scale(0.65)">
+          <rect x="0" y="0" width="18" height="13" rx="1.5" fill="none" stroke="#E6E8EB" stroke-width="2" />
+          <line x1="5" y1="13" x2="2" y2="18" stroke="#E6E8EB" stroke-width="2" />
+          <line x1="13" y1="13" x2="16" y2="18" stroke="#E6E8EB" stroke-width="2" />
+          <circle cx="-5" cy="5" r="3.5" fill="#E6E8EB" />
+          <path d="M -9 15 C -9 11, -1 11, -1 15" fill="none" stroke="#E6E8EB" stroke-width="2" stroke-linecap="round" />
+          <line x1="-3" y1="10" x2="3" y2="4" stroke="#E6E8EB" stroke-width="2" stroke-linecap="round" />
+          <circle cx="9" cy="18" r="2.5" fill="#E6E8EB" />
+          <circle cx="16" cy="18" r="2.5" fill="#E6E8EB" />
+        </g>
+        
+        <!-- Checkmark Badge -->
+        <circle cx="50" cy="15" r="7.5" fill="#0D1B2A" stroke="#33D1FF" stroke-width="2" />
+        <path d="M 46.5 15 L 49 17.5 L 53.5 13" fill="none" stroke="#33D1FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+        <line x1="50" y1="5" x2="50" y2="1.5" stroke="#33D1FF" stroke-width="1.5" stroke-linecap="round" />
+        <line x1="41.5" y1="8.5" x2="38.5" y2="6" stroke="#33D1FF" stroke-width="1.5" stroke-linecap="round" />
+        <line x1="58.5" y1="8.5" x2="61.5" y2="6" stroke="#33D1FF" stroke-width="1.5" stroke-linecap="round" />
+
+        <!-- Gradients definition -->
+        <defs>
+          <linearGradient id="hero-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0A84FF" />
+            <stop offset="100%" stop-color="#33D1FF" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </section>
+
+  <!-- SOBRE AULASYNC & SOBRE NOSOTROS (VIDEOS) -->
+  <section id="galeria" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; text-align: center;">
+    
+    <!-- Main Video: Sobre AulaSync -->
+    <h2 class="section-title" data-aos="fade-up" style="text-align: center; margin-bottom: 30px;">Sobre AulaSync</h2>
+    
+    <div class="video-container" data-aos="fade-up" style="max-width: 600px; width: 100%; margin: 0 auto 50px auto; display: flex; flex-direction: column; align-items: center;">
+      <div class="video-wrapper" style="width: 100%; max-width: 600px; border-radius: 16px; overflow: hidden; border: 1px solid var(--color-border); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); background: #000;">
+        <video id="aulaSyncVideo" controls preload="metadata" style="width: 100%; max-height: 360px; display: block; border-radius: 16px; background: #000; object-fit: contain;">
+          <source src="assets/video.mp4" type="video/mp4">
+          <source src="assets/Galeria%201.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video HTML5.
+        </video>
+      </div>
+    </div>
+
+    <!-- Secondary Section: Sobre Nosotros (2 Vertical Videos Side by Side) -->
+    <div class="sobre-nosotros-block" data-aos="fade-up" style="width: 100%; max-width: 650px; margin: 20px auto 0 auto; display: flex; flex-direction: column; align-items: center;">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 30px;">Sobre Nosotros</h2>
+      
+      <!-- Flex Container forcing Side-by-Side row -->
+      <div class="vertical-videos-grid" style="display: flex !important; flex-direction: row !important; justify-content: center !important; align-items: center !important; gap: 25px !important; width: 100% !important; max-width: 600px !important; margin: 0 auto !important;">
+        
+        <!-- Video Vertical 1 -->
+        <div class="vertical-video-item" style="width: 220px !important; max-width: 220px !important; flex: 0 0 220px !important;">
+          <div class="vertical-video-wrapper" style="width: 220px !important; height: 380px !important; border-radius: 16px !important; overflow: hidden !important; border: 1px solid var(--color-border) !important; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5) !important; background: #000 !important;">
+            <video controls preload="metadata" style="width: 100% !important; height: 100% !important; object-fit: cover !important; border-radius: 16px !important; background: #000 !important;">
+              <source src="assets/video1_vertical.mp4" type="video/mp4">
+              <source src="assets/WhatsApp%20Video%202026-09-15%20at%202.45.41%20PM.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video HTML5.
+            </video>
+          </div>
+        </div>
+
+        <!-- Video Vertical 2 -->
+        <div class="vertical-video-item" style="width: 220px !important; max-width: 220px !important; flex: 0 0 220px !important;">
+          <div class="vertical-video-wrapper" style="width: 220px !important; height: 380px !important; border-radius: 16px !important; overflow: hidden !important; border: 1px solid var(--color-border) !important; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5) !important; background: #000 !important;">
+            <video controls preload="metadata" style="width: 100% !important; height: 100% !important; object-fit: cover !important; border-radius: 16px !important; background: #000 !important;">
+              <source src="assets/video2_vertical.mp4" type="video/mp4">
+              <source src="assets/WhatsApp%20Video%202026-09-15%20at%202.46.00%20PM.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video HTML5.
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL FOR GALLERY -->
+  <div class="lightbox" aria-hidden="true" role="dialog">
+    <span class="lightbox-close" aria-label="Cerrar imagen">&times;</span>
+    <img class="lightbox-content" src="" alt="Vista ampliada">
+  </div>
+
+  <!-- CONTENIDO (Features & Purpose) -->
+  <section id="contenido">
+    <h2 class="section-title" data-aos="fade-up">¿Por qué elegir AulaSync?</h2>
+    
+    <!-- 4 main benefits grid -->
+    <div class="content-features">
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-icon-wrapper">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>
+        </div>
+        <h3>Siempre Conectado</h3>
+        <p>Garantizamos redes estables y computadoras listas para sincronizarse de inmediato en cada clase.</p>
+      </div>
+
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-icon-wrapper">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Ahorra Tiempo</h3>
+        <p>Olvídate de perder los primeros 15 minutos configurando proyectores o encendiendo equipos lentos.</p>
+      </div>
+
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-icon-wrapper">
+          <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>Todo Listo</h3>
+        <p>Sistemas operativos depurados y software educativo previamente cargado según el plan de estudio.</p>
+      </div>
+
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-icon-wrapper">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Estable y Seguro</h3>
+        <p>Garantía de soporte técnico permanente ante fallos y armado con piezas robustas a prueba de aulas.</p>
+      </div>
+    </div>
+
+    <!-- Purpose banner -->
+    <div class="purpose-wrapper" data-aos="fade-up">
+      <div class="purpose-info">
+        <h3>Nuestro Propósito</h3>
+        <p>Facilitamos el trabajo docente con tecnología confiable y accesible, para que puedan enfocarse en lo más importante: enseñar e inspirar.</p>
+        <div class="purpose-list">
+          <div class="purpose-item">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Optimización del tiempo activo de clases.</span>
+          </div>
+          <div class="purpose-item">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Reducción a cero de errores de software y fallas de hardware en horario académico.</span>
+          </div>
+          <div class="purpose-item">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Mejor enfoque en la pedagogía gracias a la estabilidad tecnológica.</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg class="hero-logo-large" style="max-width: 320px;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="44" fill="none" stroke="#33D1FF" stroke-width="2" />
+          <path d="M 45 35 L 55 45 L 65 30" fill="none" stroke="#0A84FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="50" cy="50" r="10" fill="none" stroke="#E6E8EB" stroke-width="2" />
+          <line x1="50" y1="40" x2="50" y2="38" stroke="#E6E8EB" stroke-width="2" />
+          <line x1="50" y1="60" x2="50" y2="62" stroke="#E6E8EB" stroke-width="2" />
+          <line x1="40" y1="50" x2="38" y2="50" stroke="#E6E8EB" stroke-width="2" />
+          <line x1="60" y1="50" x2="62" y2="50" stroke="#E6E8EB" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2 class="section-title" data-aos="fade-up">Contacto</h2>
+    <div class="contact-container">
+      <div class="contact-info" data-aos="fade-right">
+        <h3 class="contact-info-title">¿Listo para transformar tu aula?</h3>
+        <p>Déjanos un mensaje y realizaremos una auditoría de infraestructura tecnológica totalmente gratuita en tu institución educativa.</p>
+        
+        <div class="contact-detail-list">
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Email de Contacto</h4>
+              <p>aulasync0@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Teléfono / Soporte</h4>
+              <p>+57 322 3293495</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/aulasync0@gmail.com" method="POST" data-aos="fade-left">
+        <!-- FormSubmit configuration -->
+        <input type="hidden" name="_subject" value="Nueva Solicitud de AulaSync">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="form-group">
+          <input type="text" id="name" name="Nombre" class="form-input" placeholder=" " required>
+          <label for="name" class="form-label">Nombre del Contacto</label>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="institution" name="Institución" class="form-input" placeholder=" " required>
+          <label for="institution" class="form-label">Institución Educativa</label>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" name="Correo" class="form-input" placeholder=" " required>
+          <label for="email" class="form-label">Correo Electrónico</label>
+        </div>
+
+        <div class="form-group">
+          <textarea id="message" name="Mensaje" class="form-input" placeholder=" " required></textarea>
+          <label for="message" class="form-label">Detalles del Proyecto / Consulta</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-submit">Enviar Solicitud</button>
+        <a href="mailto:aulasync0@gmail.com?subject=Solicitud%20de%20Información%20AulaSync" class="btn btn-secondary" style="margin-top: 10px; width: 100%; text-align: center;">Enviar directamente por mi app de correo</a>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <svg class="logo-svg" style="width: 32px; height: 32px;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="#33D1FF" stroke-width="4" />
+        <rect x="35" y="32" width="30" height="20" rx="3" fill="#0D1B2A" stroke="#0A84FF" stroke-width="2" />
+        <polygon points="50,36 60,40 50,44 40,40" fill="#33D1FF" />
+      </svg>
+      <span class="logo-text" style="font-size: 1.2rem;"><span class="aula">Aula</span><span class="sync">Sync</span></span>
+    </div>
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contenido">Contenido</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <div class="copyright">
+      &copy; 2026 AulaSync. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
